@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 
 
     <title>Contact Phelan McCall</title>
@@ -15,44 +16,71 @@
 
 </head>
 
-<body>
-    <nav>
-        <div class="container">
-            <div id="logo">Phelan McCall</div>
+<body style="background-image: url('./assets/images/gravel.png'); font-size: 2vh;">
+    <div role="navigation" class="container-fluid text-secondary bg-light border-secondary border-bottom">
 
+        <div class="row justify-content-around">
+            <div class="text-center col-sm-12 col-md-3 p-3 text-light bg-info " id="logo">Phelan McCall</div>
 
-            <div id="header-links">
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
+            <div class="text-center col-sm-12 col-md-4 my-2">
+                <div class="row">
+                    <a class="col-4 text-secondary" href="index.html">About</a>
+                    <a class="col-4 text-secondary text-truncate border-secondary border-left border-right" href="portfolio.html">Portfolio</a>
+                    <a class="col-4 text-secondary" href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <div id="section">
-        <header>
-            <h2>Contact</h2>
-        </header>
-
-        <form id="contact-form">
-            <label class="label">
-                Name
-            </label>
-            <input id="name-input" type="name" placeholder="John Smith" required />
-
-            <label class="label">Email</label>
-            <input id="email-input" type="email" placeholder="example@gmail.com" required />
-
-            <label class="label">Message</label>
-            <textarea id="message" name="message" rows="4" cols="50" maxlength="50" placeholder="Message" required></textarea>
-
-            <input id="submit" type="submit" />
-        </form>
     </div>
 
-    <footer>
+    <div id="section" class="container text-sm-center text-lg-left bg-light my-2 pb-5 border border-secondary rounded">
+        <div class="row p-2">
+            <header class="col-12">
+                <p class="text-info font-weight-bold  border-secondary border-bottom">Contact</p>
+            </header>
+
+            <form class="bg-light col-1 text-secondary">
+
+                <div class="form-group">
+                    <label class="label">
+                        Name
+                    </label>
+                    <input id="name-input" type="name" placeholder="John Smith" required />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label class="label">Email</label>
+                    <input id="email-input" type="email" placeholder="example@gmail.com" required />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label class="label">Message</label>
+                    <textarea id="message" name="message" rows="4" cols="50" maxlength="50" placeholder="Message"
+                        required></textarea>
+
+                </div>
+
+                <input class="btn btn-info" type="submit" />
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer class="navbar fixed-bottom bg-secondary text-white border-info border-top">
         <p>Copyright &copy;</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
