@@ -16,7 +16,7 @@
 
 </head>
 
-<body style="background-image: url('./assets/images/gravel.png'); font-size: 2vh;">
+<body style="background-image: url('./assets/images/gravel.png'); font-size: 120%;">
     <div role="navigation" class="container-fluid text-secondary bg-light border-secondary border-bottom">
 
         <div class="row justify-content-around">
@@ -36,31 +36,30 @@
     <div id="section" class="container text-sm-center text-lg-left bg-light my-2 pb-5 border border-secondary rounded">
         <div class="row p-2">
             <header class="col-12">
-                <p class="text-info font-weight-bold  border-secondary border-bottom">Contact</p>
+                <p class="text-info font-weight-bold py-4 border-secondary border-bottom">Contact</p>
             </header>
 
-            <form class="bg-light col-1 text-secondary">
+            <form class="bg-light col-12 text-secondary">
 
                 <div class="form-group">
-                    <label class="label">
+                    <label>
                         Name
                     </label>
-                    <input id="name-input" type="name" placeholder="John Smith" required />
+                    <input id="name-input" class="form-control" type="name" placeholder="John Smith" required />
 
                 </div>
 
                 <div class="form-group">
 
-                    <label class="label">Email</label>
-                    <input id="email-input" type="email" placeholder="example@gmail.com" required />
+                    <label>Email</label>
+                    <input id="email-input" class="form-control" type="email" placeholder="example@gmail.com" required />
 
                 </div>
 
                 <div class="form-group">
 
-                    <label class="label">Message</label>
-                    <textarea id="message" name="message" rows="4" cols="50" maxlength="50" placeholder="Message"
-                        required></textarea>
+                    <label>Message</label>
+                    <textarea class="form-control" id="message" name="message" required></textarea>
 
                 </div>
 
@@ -71,7 +70,7 @@
 
     </div>
 
-    <footer class="navbar fixed-bottom bg-secondary text-white border-info border-top">
+    <footer class="navbar fixed-bottom justify-content-center w-100 bg-secondary text-white border-info border-top">
         <p>Copyright &copy;</p>
     </footer>
 
